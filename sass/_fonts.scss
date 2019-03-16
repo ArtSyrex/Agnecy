@@ -9,6 +9,16 @@
 }
 
 @font-face {
+    font-family: 'Open Sans Bold';
+    src: url('OpenSans-Bold.eot');
+    src: url('OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('OpenSans-Bold.woff') format('woff'),
+    url('OpenSans-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+@font-face {
     font-family: 'Open Sans ExtraBold';
     src: url('../fonts/OpenSans-ExtraBold.eot');
     src: url('../fonts/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
@@ -32,10 +42,14 @@
     font-family: 'Open Sans Regular', sans-serif;
 }
 
-@mixin xbold {
+@mixin bold {
+    font-family: "Open Sans Bold", sans-serif;
+}
+
+@mixin x-bold {
     font-family: "Open Sans ExtraBold", sans-serif;
 }
 
-@mixin bold {
+@mixin s-bold {
     font-family: 'Open Sans Semibold', sans-serif;
 }

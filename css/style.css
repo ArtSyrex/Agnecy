@@ -17,6 +17,14 @@
 }
 
 @font-face {
+  font-family: 'Open Sans Bold';
+  src: url("OpenSans-Bold.eot");
+  src: url("OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("OpenSans-Bold.woff") format("woff"), url("OpenSans-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Open Sans ExtraBold';
   src: url("../fonts/OpenSans-ExtraBold.eot");
   src: url("../fonts/OpenSans-ExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans-ExtraBold.woff") format("woff"), url("OpenSans-ExtraBold.ttf") format("truetype");
@@ -36,14 +44,103 @@ body {
   font-family: 'Open Sans Regular', sans-serif;
 }
 
-.navbar {
-  min-height: 80px;
+.button {
+  padding: 15px 60px;
+  border: none;
+  background-color: #ff2d2d;
+  color: #fff;
+  font-size: 18px;
+  font-family: "Open Sans Bold", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-.navbar__menu {
+.header {
+  background-color: #f6f2f2;
+}
+
+.header .navbar {
+  background-color: #313030;
+  left: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 99;
+}
+
+.header .navbar__menu {
+  margin: 0 auto;
+}
+
+.header .navbar__menu ul {
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
+  color: #e0e0e0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .navbar__menu ul li {
+  list-style-type: none;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+}
+
+.header .navbar__menu ul li:hover {
+  background-color: #ff2d2d;
+}
+
+.header .navbar__menu ul li a {
+  display: block;
+  color: #e0e0e0;
+  padding: 32px 25px 28px;
+  text-decoration: none;
+}
+
+.header .hero {
+  padding-top: 100px;
+}
+
+.header .hero__title {
+  width: 45%;
+}
+
+.header .hero__title h1 {
+  font-family: "Open Sans ExtraBold", sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  margin-bottom: 35px;
+  letter-spacing: 2px;
+}
+
+.header .hero__title p {
+  font-family: 'Open Sans Regular', sans-serif;
+  font-size: 16px;
+  opacity: 0.7;
+  line-height: 2em;
+}
+
+.header .hero__button {
+  margin-top: 40px;
+}
+
+.header .hero__video {
+  margin-top: 50px;
+  width: 45%;
+}
+
+.header .hero-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 110px;
 }
 /*# sourceMappingURL=style.css.map */
