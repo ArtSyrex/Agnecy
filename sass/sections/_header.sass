@@ -1,53 +1,89 @@
 .header
     background-color: #f6f2f2
-    .navbar
-        background-color: #313030
-        left: 0
-        top: 0
-        position: fixed
-        width: 100%
-        z-index: 99
-        &__menu
-            margin: 0 auto
-            & ul
-                margin: 0
-                padding: 0
-                display: flex
-                color: #e0e0e0
-                justify-content: center
-                & li
-                    list-style-type: none
-                    text-transform: uppercase
-                    text-align: center
-                    background-color: transparent
-                    &:hover
-                        background-color: $primary
-                    & a
-                        display: block
-                        color: #e0e0e0
-                        padding: 32px 25px 28px
-                        text-decoration: none
-    .hero
-        padding-top: 100px
-        &__title
-            width: 45%
-            & h1
-                +x-bold
-                text-transform: uppercase
-                font-size: 60px
-                margin-bottom: 35px
-                letter-spacing: 2px
-            & p
-                +regular
-                font-size: 16px
-                opacity: 0.7
-                line-height: 2em
-        &__button
-            margin-top: 40px
-        &__video
-            margin-top: 50px
-            width: 45%
-        &-wrap
+.navbar
+    background-color: #313030
+    left: 0
+    top: 0
+    position: fixed
+    width: 100%
+    z-index: 99
+    &__menu
+        margin: 0 auto
+        & ul
+            margin: 0
+            padding: 0
             display: flex
-            justify-content: space-between
-            padding-bottom: 110px
+            color: #e0e0e0
+            justify-content: center
+            flex-wrap: wrap
+            & li
+                list-style-type: none
+                text-transform: uppercase
+                text-align: center
+                background-color: transparent
+                &:hover
+                    background-color: $primary
+                & a
+                    font-size: 14px
+                    display: block
+                    color: #e0e0e0
+                    padding: 32px 25px 28px
+                    text-decoration: none
+.hero
+    padding: 110px 0
+    &-wrap
+        display: flex
+        justify-content: space-between
+    &__title
+        flex-basis: 45%
+        &-heading
+            text-transform: uppercase
+            font-size: 60px
+            margin-bottom: 35px
+            letter-spacing: 2px
+            +x-bold
+        & p
+            +regular
+            font-size: 16px
+            opacity: 0.7
+            line-height: 2em
+        &-button
+            margin-top: 40px
+    &__video 
+        flex-basis: 45%
+        & video
+            width: 100%
+            margin-top: 50px
+@media (max-width: 1279px)
+    .hero
+        &__title
+            &-heading
+                font-size: 40px
+        &__video video
+            height: 84%
+@media (max-width: 1023px)
+    .hero
+        &__title
+            &-heading
+                font-size: 34px
+        &__video
+            flex-basis: 48%
+@media (max-width: 850px)
+    .navbar__menu ul li a
+        padding: 20px 20px
+    .hero
+        padding: 60px 0
+        &-wrap
+            flex-direction: column
+        &__title
+            width: 100%
+            text-align: center
+            &-heading
+                font-size: 36px
+        &__video
+            width: 100%
+@media (max-width: 420px)
+    .navbar__menu ul li a
+        padding: 20px 6px
+    .hero__title-heading
+        font-size: 26px

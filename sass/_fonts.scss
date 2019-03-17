@@ -10,10 +10,10 @@
 
 @font-face {
     font-family: 'Open Sans Bold';
-    src: url('OpenSans-Bold.eot');
-    src: url('OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
-    url('OpenSans-Bold.woff') format('woff'),
-    url('OpenSans-Bold.ttf') format('truetype');
+    src: url('../fonts/OpenSans-Bold.eot');
+    src: url('../fonts/OpenSans-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Bold.woff') format('woff'),
+    url('../fonts/OpenSans-Bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     }
@@ -23,7 +23,7 @@
     src: url('../fonts/OpenSans-ExtraBold.eot');
     src: url('../fonts/OpenSans-ExtraBold.eot?#iefix') format('embedded-opentype'),
     url('../fonts/OpenSans-ExtraBold.woff') format('woff'),
-    url('OpenSans-ExtraBold.ttf') format('truetype');
+    url('../OpenSans-ExtraBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
