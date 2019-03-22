@@ -8,6 +8,11 @@
   margin: 0 auto;
 }
 
+section {
+  padding-top: 65px;
+  padding-bottom: 100px;
+}
+
 @media (max-width: 1279px) {
   .container {
     max-width: 950px;
@@ -72,6 +77,29 @@ body {
   font-family: "Open Sans Bold", sans-serif;
   border-radius: 5px;
   cursor: pointer;
+}
+
+h2 {
+  font-size: 42px;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: "Open Sans Bold", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+p {
+  line-height: 1.8;
+}
+
+hr {
+  width: 1250px;
+  opacity: 0.4;
+}
+
+.mini-hr {
+  width: 135px;
+  margin: 20px auto 0;
+  border: 1px solid #ff2d2d;
 }
 
 .header {
@@ -154,7 +182,6 @@ body {
   font-family: 'Open Sans Regular', sans-serif;
   font-size: 16px;
   opacity: 0.7;
-  line-height: 2em;
 }
 
 .hero__title-button {
@@ -204,11 +231,12 @@ body {
             flex-direction: column;
   }
   .hero__title {
+    padding-top: 30px;
     width: 100%;
     text-align: center;
   }
   .hero__title-heading {
-    font-size: 36px;
+    font-size: 40px;
   }
   .hero__video {
     width: 100%;
@@ -222,5 +250,66 @@ body {
   .hero__title-heading {
     font-size: 26px;
   }
+}
+
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-us__block {
+  -ms-flex-preferred-size: 42%;
+      flex-basis: 42%;
+}
+
+.about-us__block p {
+  margin-top: 35px;
+  font-size: 16px;
+}
+
+.about-us__block-button {
+  background-color: #fff;
+  color: #ff2d2d;
+  border: 2px solid #ff2d2d;
+  margin-top: 40px;
+}
+
+.about-us__items {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  opacity: 0.7;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-us__items__item {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+  padding-top: 40px;
+}
+
+.about-us__items h5 {
+  font-size: 24px;
+  margin: 23px 0 20px;
+}
+
+.features-heading {
+  width: 515px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.features-heading p {
+  opacity: 0.7;
 }
 /*# sourceMappingURL=style.css.map */
