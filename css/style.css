@@ -434,4 +434,152 @@ hr {
   background-color: #f5f0dd;
   height: 210px;
 }
+
+.subscribe-news {
+  background-color: #f5f0dd;
+}
+
+.subscribe-news-heading {
+  color: #fff;
+  text-align: center;
+}
+
+.subscribe-news-heading h3 {
+  font-size: 42px;
+  font-family: "Open Sans Bold", sans-serif;
+  margin-bottom: 30px;
+}
+
+.subscribe-news-heading span {
+  font-size: 16px;
+}
+
+.subscribe-news form {
+  margin-top: 65px;
+  text-align: center;
+}
+
+.news-input-email {
+  padding: 30px 30px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #2c2c2d;
+  width: 400px;
+}
+
+.news-input-submit {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-left: 20px;
+  padding: 30px 60px;
+}
+
+@media (max-width: 700px) {
+  .news-input-email {
+    width: 100%;
+  }
+  .news-input-submit {
+    margin-top: 30px;
+  }
+}
+
+.contact-us-heading {
+  width: 50%;
+}
+
+.contact-us-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 75px;
+}
+
+.contact-us__form {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.contact-us__form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.contact-us__info {
+  padding: 70px;
+  color: rgba(255, 255, 255, 0.8);
+  -ms-flex-preferred-size: 35%;
+      flex-basis: 35%;
+  background-color: #2d2d2d;
+}
+
+.contact-us__info h6 {
+  font-size: 18px;
+  font-family: "Open Sans Bold", sans-serif;
+}
+
+.contact-us__info span {
+  display: block;
+  margin-top: 25px;
+}
+
+.contact-input {
+  padding: 20px 30px;
+  background-color: #e5e5e5;
+  border: none;
+  border-radius: 8px;
+}
+
+.contact-input-half-width {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.contact-input-max-width {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  margin-top: 45px;
+}
+
+.contact-input-message {
+  height: 250px;
+}
+
+.contact-input-button {
+  text-transform: uppercase;
+  padding: 20px 30px;
+}
+
+.footer {
+  background-color: #313030;
+}
+
+.footer-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 45px;
+  padding-bottom: 25px;
+}
+
+.footer-wrap span {
+  color: #fff;
+  opacity: .8;
+}
+
+.footer-socials a {
+  margin-left: 16px;
+}
 /*# sourceMappingURL=style.css.map */
