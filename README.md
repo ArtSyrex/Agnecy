@@ -1,3 +1,3 @@
 # Agnecy
-Landing page
+Landing page.
 Весь фон заменяется на фоновые картинки.
